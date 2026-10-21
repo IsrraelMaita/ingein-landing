@@ -6,6 +6,7 @@
 		"author": "IsrraelMaita"
 	},
 	"landingPage": "/",
+	"login": false,
 	"preferredVersions": {
 		"php": "8.3",
 		"wp": "latest"
@@ -36,10 +37,6 @@
 				"timezone_string": "America/Argentina/Cordoba",
 				"permalink_structure": "/%postname%/"
 			}
-		},
-		{
-			"step": "setSiteLanguage",
-			"language": "es_AR"
 		}
 	]
 }
