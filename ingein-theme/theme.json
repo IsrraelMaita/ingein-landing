@@ -1,0 +1,116 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"layout": {
+			"contentSize": "760px",
+			"wideSize": "1200px"
+		},
+		"color": {
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"palette": [
+				{ "slug": "naranja", "name": "Naranja INGEIN", "color": "#FCAF3B" },
+				{ "slug": "naranja-oscuro", "name": "Naranja oscuro", "color": "#E8941A" },
+				{ "slug": "grafito", "name": "Grafito", "color": "#2B2B2B" },
+				{ "slug": "grafito-claro", "name": "Grafito claro", "color": "#3A3A3A" },
+				{ "slug": "gris", "name": "Gris texto", "color": "#5F5F5F" },
+				{ "slug": "gris-claro", "name": "Gris claro", "color": "#F5F4F1" },
+				{ "slug": "linea", "name": "Línea", "color": "#E6E3DD" },
+				{ "slug": "fondo", "name": "Fondo", "color": "#FAFAFA" },
+				{ "slug": "blanco", "name": "Blanco", "color": "#FFFFFF" }
+			]
+		},
+		"typography": {
+			"fluid": true,
+			"defaultFontSizes": false,
+			"fontFamilies": [
+				{
+					"slug": "titulos",
+					"name": "Barlow Semi Condensed",
+					"fontFamily": "\"Barlow Semi Condensed\", \"Barlow\", system-ui, sans-serif"
+				},
+				{
+					"slug": "texto",
+					"name": "Barlow",
+					"fontFamily": "\"Barlow\", system-ui, -apple-system, \"Segoe UI\", sans-serif"
+				}
+			],
+			"fontSizes": [
+				{ "slug": "small", "name": "Chico", "size": "0.875rem", "fluid": false },
+				{ "slug": "medium", "name": "Normal", "size": "1.0625rem", "fluid": false },
+				{ "slug": "large", "name": "Grande", "size": "1.25rem", "fluid": { "min": "1.125rem", "max": "1.25rem" } },
+				{ "slug": "x-large", "name": "Título chico", "size": "1.75rem", "fluid": { "min": "1.375rem", "max": "1.75rem" } },
+				{ "slug": "xx-large", "name": "Título", "size": "3rem", "fluid": { "min": "2.125rem", "max": "3rem" } },
+				{ "slug": "huge", "name": "Hero", "size": "5rem", "fluid": { "min": "2.75rem", "max": "5rem" } }
+			]
+		},
+		"spacing": {
+			"defaultSpacingSizes": false,
+			"spacingSizes": [
+				{ "slug": "20", "name": "XS", "size": "0.5rem" },
+				{ "slug": "30", "name": "S", "size": "1rem" },
+				{ "slug": "40", "name": "M", "size": "1.5rem" },
+				{ "slug": "50", "name": "L", "size": "clamp(2rem, 4vw, 3rem)" },
+				{ "slug": "60", "name": "XL", "size": "clamp(3rem, 7vw, 6rem)" },
+				{ "slug": "70", "name": "XXL", "size": "clamp(4rem, 10vw, 8rem)" }
+			]
+		},
+		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--fondo)",
+			"text": "var(--wp--preset--color--grafito)"
+		},
+		"spacing": {
+			"padding": {
+				"left": "clamp(1rem, 4vw, 2rem)",
+				"right": "clamp(1rem, 4vw, 2rem)"
+			},
+			"blockGap": "1.25rem"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--texto)",
+			"fontSize": "var(--wp--preset--font-size--medium)",
+			"lineHeight": "1.65"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--titulos)",
+					"fontWeight": "600",
+					"lineHeight": "1.1",
+					"letterSpacing": "-0.01em"
+				}
+			},
+			"h1": { "typography": { "fontSize": "var(--wp--preset--font-size--huge)" } },
+			"h2": { "typography": { "fontSize": "var(--wp--preset--font-size--xx-large)" } },
+			"h3": { "typography": { "fontSize": "var(--wp--preset--font-size--x-large)" } },
+			"link": {
+				"color": { "text": "var(--wp--preset--color--grafito)" },
+				":hover": { "color": { "text": "var(--wp--preset--color--naranja-oscuro)" } }
+			},
+			"button": {
+				"color": {
+					"background": "var(--wp--preset--color--naranja)",
+					"text": "var(--wp--preset--color--grafito)"
+				},
+				"border": { "radius": "999px" },
+				"spacing": { "padding": { "top": "0.9rem", "bottom": "0.9rem", "left": "1.6rem", "right": "1.6rem" } },
+				"typography": { "fontWeight": "600", "fontSize": "1rem" },
+				":hover": {
+					"color": {
+						"background": "var(--wp--preset--color--naranja-oscuro)",
+						"text": "var(--wp--preset--color--grafito)"
+					}
+				}
+			}
+		}
+	},
+	"templateParts": [
+		{ "name": "header", "title": "Encabezado", "area": "header" },
+		{ "name": "footer", "title": "Pie", "area": "footer" }
+	]
+}

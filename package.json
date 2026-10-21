@@ -1,0 +1,11 @@
+{
+	"name": "ingein-landing",
+	"private": true,
+	"description": "Landing de INGEIN (WordPress block theme) servida con WordPress Playground",
+	"scripts": {
+		"dev": "wp-playground-cli server --port=9400 --mount-dir ./ingein-theme /wordpress/wp-content/themes/ingein-theme --blueprint=./blueprint.json"
+	},
+	"devDependencies": {
+		"@wp-playground/cli": "3.1.58"
+	}
+}

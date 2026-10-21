@@ -1,0 +1,31 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"landingPage": "/",
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+	"features": {
+		"networking": true
+	},
+	"login": true,
+	"steps": [
+		{
+			"step": "activateTheme",
+			"themeFolderName": "ingein-theme"
+		},
+		{
+			"step": "setSiteOptions",
+			"options": {
+				"blogname": "INGEIN",
+				"blogdescription": "Ingeniería · Inmobiliaria — Córdoba",
+				"timezone_string": "America/Argentina/Cordoba",
+				"permalink_structure": "/%postname%/"
+			}
+		},
+		{
+			"step": "setSiteLanguage",
+			"language": "es_AR"
+		}
+	]
+}

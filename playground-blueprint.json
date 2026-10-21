@@ -1,0 +1,45 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"meta": {
+		"title": "INGEIN — Landing",
+		"description": "Landing de INGEIN (Ingeniería · Inmobiliaria) instalada desde GitHub.",
+		"author": "IsrraelMaita"
+	},
+	"landingPage": "/",
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+	"features": {
+		"networking": true
+	},
+	"steps": [
+		{
+			"step": "installTheme",
+			"themeData": {
+				"resource": "git:directory",
+				"url": "https://github.com/IsrraelMaita/ingein-landing",
+				"ref": "main",
+				"refType": "branch",
+				"path": "ingein-theme"
+			},
+			"options": {
+				"activate": true,
+				"targetFolderName": "ingein-theme"
+			}
+		},
+		{
+			"step": "setSiteOptions",
+			"options": {
+				"blogname": "INGEIN",
+				"blogdescription": "Ingeniería · Inmobiliaria — Córdoba",
+				"timezone_string": "America/Argentina/Cordoba",
+				"permalink_structure": "/%postname%/"
+			}
+		},
+		{
+			"step": "setSiteLanguage",
+			"language": "es_AR"
+		}
+	]
+}
