@@ -4,11 +4,11 @@ Tema de bloques de WordPress (`ingein-theme/`) para la landing de INGEIN, Ingeni
 
 ## Verla online
 
-**[Abrir en WordPress Playground](https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/IsrraelMaita/ingein-landing/main/playground-blueprint.json)**
+**[Abrir en WordPress Playground](https://playground.wordpress.net/?login=no&blueprint-url=https://raw.githubusercontent.com/IsrraelMaita/ingein-landing/main/playground-blueprint.json)**
 
 WordPress corre dentro del navegador de quien abre el link (la primera carga tarda 15–30 s). `playground-blueprint.json` instala el tema directamente desde la rama `main` de este repo, así que cada push se ve en el link sin hacer nada más. El repo tiene que ser público.
 
-El link abre la página como la ve un visitante, sin la barra de admin. Para entrar al editor, ir a `/wp-admin` dentro de Playground con el usuario `admin` y la contraseña `password` (son los datos por defecto de Playground; los cambios quedan solo en ese navegador).
+El link abre la página como la ve un visitante: `login=no` evita que Playground inicie sesión automáticamente (sin ese parámetro aparece la barra de admin). Para entrar al editor, ir a `/wp-admin` dentro de Playground con el usuario `admin` y la contraseña `password` (son los datos por defecto de Playground; los cambios quedan solo en ese navegador).
 
 ## Levantar en local
 
